@@ -52,13 +52,14 @@
         
         p {
             font-size: 36px;
+            line-height: 40px;
             margin-bottom: 55px;
         }
         
         .hero-image {
             float: right;
             position: absolute;
-            top: -90px;
+            top: -80px;
             right: -120px;
         }
         
@@ -71,6 +72,7 @@
         .hero-text {
             width: 60%;
             padding-right: 100px;
+            margin-bottom: 10px;
         }
         
         .hero-btn {
@@ -80,6 +82,7 @@
             border-radius: 40px;
             transition: .2s;
             text-transform: uppercase;
+            
         }
         
         .hero-btn:hover {
