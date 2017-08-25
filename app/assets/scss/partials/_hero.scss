@@ -1,0 +1,94 @@
+#hero {
+    
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.3)), url('../img/background-cover.png'); 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+    
+
+    .hero-upper {
+        
+        ul li {
+            display: inline-block;
+            margin-right: 40px;
+            margin-top: 20px;
+        }
+        
+        li a {
+            color: white;
+            border-bottom: 4px solid white transparent;
+            text-transform: uppercase;
+            transition: border-bottom 0.1s, color 0.1s;
+            padding-bottom: 4px;
+            
+        }
+        
+        li a:hover {
+            border-bottom: 4px solid white;
+        }
+        
+        .hero-logo {
+            float: left;
+        }
+        
+        .hero-nav {
+            float: right;
+        }
+        
+    }
+    
+    .hero-lower {
+        
+        display: inline-block;
+        position: relative;
+        color:  white;
+        margin-top: 150px;
+        
+        h2 {
+            margin-bottom: 40px;
+        }
+        
+        p {
+            font-size: 36px;
+            margin-bottom: 55px;
+        }
+        
+        .hero-image {
+            float: right;
+            position: absolute;
+            top: -90px;
+            right: -120px;
+        }
+        
+        .iphone-image {
+            width: 85%;
+            position: relative;
+            margin-bottom: -240px;
+        }
+        
+        .hero-text {
+            width: 60%;
+            padding-right: 100px;
+        }
+        
+        .hero-btn {
+            padding: 22px 40px;
+            background: #282828;
+            color: white;
+            border-radius: 40px;
+            transition: .2s;
+            text-transform: uppercase;
+        }
+        
+        .hero-btn:hover {
+            background: #383737;
+        }
+        .btn-phone {
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+    }
+    
+}
