@@ -1,0 +1,44 @@
+#additional-details {
+    background: url('../img/nose-bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    
+    .additional-details-text {
+        width: 65%;
+        padding: 100px 0;
+        
+        h2 {
+            font-size: 48px;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            line-height: 60px;
+            margin-bottom: 50px;
+            color: white;
+            
+            span {
+                color: $btn-color;
+            }
+            
+        }
+        
+        p {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 80px;
+            padding-right: 150px;
+            color: $text-color;
+        }
+        
+        .additional-details-btn {
+            background: $btn-color;
+            padding: 15px 50px;
+            border-radius: 20%;
+            color: white;
+            transition: all .2s;
+            margin-right: 16px;
+        }
+        .additional-details-btn:hover {
+            background: lighten($btn-color,5%);
+        }
+    }
+}

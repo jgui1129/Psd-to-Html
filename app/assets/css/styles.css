@@ -244,7 +244,52 @@ p {
 }
 
 .row .col-4-app p {
-  color: #646464;
+  color: #585858;
   font-size: 18px;
   line-height: 24px;
+}
+
+#additional-details {
+  background: url("../img/nose-bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#additional-details .additional-details-text {
+  width: 65%;
+  padding: 100px 0;
+}
+
+#additional-details .additional-details-text h2 {
+  font-size: 48px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+#additional-details .additional-details-text h2 span {
+  color: #f55150;
+}
+
+#additional-details .additional-details-text p {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 80px;
+  padding-right: 150px;
+  color: #585858;
+}
+
+#additional-details .additional-details-text .additional-details-btn {
+  background: #f55150;
+  padding: 15px 50px;
+  border-radius: 20%;
+  color: white;
+  transition: all .2s;
+  margin-right: 16px;
+}
+
+#additional-details .additional-details-text .additional-details-btn:hover {
+  background: #f66968;
 }
