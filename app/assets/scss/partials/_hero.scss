@@ -67,6 +67,28 @@
             width: 85%;
             position: relative;
             margin-bottom: -240px;
+            opacity: 0;
+        }
+        
+        .iphone-off {
+            position: absolute;
+            right: 95px;
+            width: 85%;
+            opacity: 1;
+            
+        }
+        
+        .iphone-btn {
+            position: absolute;
+            right: 215px;
+        }
+        
+        .iphone-on {
+            position: absolute;
+            width: 55%;
+            right: 185px;
+            top: 107px;
+            z-index: 1;
         }
         
         .hero-text {
