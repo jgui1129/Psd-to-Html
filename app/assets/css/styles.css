@@ -1476,6 +1476,11 @@ table {
   animation-name: slideOutUp;
 }
 
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
 @font-face {
   font-family: 'HelveticaNeue-Thin';
   src: url("../fonts/HelveticaNeue-Thin.otf");

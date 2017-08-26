@@ -7,11 +7,11 @@ $(document).ready(function(){
     var waypoint = new Waypoint({
       element: $('.hero-animate'),
       handler: function(direction) {
-
         $('.hero-animate').animate({opacity: 1}, 1000).addClass('animated slideInUp');
       }, offset: 200
     });
 
+    
     $('.iphone-btn').delay(1200).animate({
         bottom: '+=-3px',
     },100);

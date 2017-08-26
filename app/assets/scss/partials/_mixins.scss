@@ -1,0 +1,33 @@
+    /* Large Devices, Wide Screens */
+@mixin extraLarge {
+    @media only screen and (max-width : 1200px) {
+        @content;
+    }
+}
+
+/* Medium Devices, Desktops */
+@mixin medium {
+    @media only screen and (max-width : 992px) {
+        @content;
+    }
+}
+        
+/* Small Devices, Tablets */
+@mixin small {
+    @media only screen and (max-width : 768px) {
+        @content;
+    }
+}
+    
+/* Extra Small Devices, Phones */ 
+@mixin extraSmall {
+    @media only screen and (max-width : 480px) {
+        @content;
+    }   
+}
+/* Custom, iPhone Retina */ 
+@mixin special {
+    @media only screen and (max-width : 320px) {
+        @content;
+    }    
+}
