@@ -1,0 +1,50 @@
+footer {
+    background: #2e2e38;
+    padding: 100px 0;
+    color: white;
+    font-size: 15px;
+    overflow: hidden;
+    
+    .footer-logo {
+        margin-bottom: 60px;
+    }
+    
+    h4 {
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+        
+    .col-4-footer{
+            
+        float: left;
+        width: 33.33%;
+        padding-right: 70px;
+            
+    }
+    
+    ul li {
+        margin-bottom: 30px;
+    }
+    
+    p {
+        font-size: 13px;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        line-height: 20px;
+    }
+    
+    span {
+        display: block;
+    }
+    
+    span.tweet-hours {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+    
+    .popular-post li {
+        background: url('../img/rectangle-image.png') no-repeat;
+        padding-left: 70px;
+    }
+    
+}
