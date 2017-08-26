@@ -341,3 +341,35 @@ footer .popular-post li {
   background: url("../img/rectangle-image.png") no-repeat;
   padding-left: 70px;
 }
+
+#copyright {
+  background: #d7dedc;
+}
+
+#copyright .container {
+  text-align: center;
+}
+
+#copyright .inline {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 50px;
+}
+
+#copyright .inline:nth-child(1):after,
+#copyright .inline:nth-child(2):after {
+  content: "|";
+  margin-left: 35px;
+}
+
+#copyright img {
+  vertical-align: top;
+  margin-top: 0;
+  margin-left: 10px;
+  transition: .1s;
+  cursor: pointer;
+}
+
+#copyright img:hover {
+  transform: rotate(-5deg);
+}

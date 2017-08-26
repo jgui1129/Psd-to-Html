@@ -1,0 +1,26 @@
+#copyright {
+    background: #d7dedc;
+    .container {
+        text-align: center;
+    }
+    .inline {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 50px;
+    }
+    .inline:nth-child(1):after,
+    .inline:nth-child(2):after {
+        content: "|";
+        margin-left: 35px;
+    }
+    img {
+        vertical-align: top;
+        margin-top: 0;
+        margin-left: 10px;
+        transition: .1s;
+        cursor: pointer;
+    }
+    img:hover {
+        transform: rotate(-5deg);
+    }
+}
