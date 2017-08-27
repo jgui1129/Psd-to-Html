@@ -5,13 +5,30 @@ footer {
     font-size: 15px;
     overflow: hidden;
     
+    @include small {
+        padding: 50px 0;
+    }
+    
+    .container {
+        
+        @include small {
+            padding-left: 30px; 
+        }
+    }
+    
     .footer-logo {
         margin-bottom: 60px;
+        
+        
     }
     
     h4 {
         margin-bottom: 30px;
         font-weight: 700;
+        
+        @include small {
+            font-size: 20px;
+        }
     }
         
     .col-4-footer{
@@ -19,6 +36,19 @@ footer {
         float: left;
         width: 33.33%;
         padding-right: 70px;
+        
+        @include betweenMedium {
+            float: left;
+            width: 33.33%;
+            padding-right: 30px;
+        }
+        
+        @include small {
+            float: none;
+            width: 100%;
+            padding-right: 0;
+            margin-bottom: 20px;
+        }
             
     }
     

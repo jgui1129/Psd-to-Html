@@ -52,4 +52,15 @@ p {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+
+    @include betweenMedium {
+        padding: 20px 30px;
+    }
+    
+    
+    @include extraSmall {
+        padding: 15px 10px;
+    }
+    
+
 }

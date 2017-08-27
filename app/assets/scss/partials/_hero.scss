@@ -14,6 +14,10 @@
             display: inline-block;
             margin-right: 40px;
             margin-top: 20px;
+            
+            @include small {
+                display: none;
+            }
         }
         
         li a {
@@ -46,14 +50,45 @@
         color:  white;
         margin-top: 150px;
         
+        @include betweenMedium {
+            margin-top: 70px;
+            text-align: center;
+        }
+        
+        
         h2 {
             margin-bottom: 40px;
+            
+            @include small {
+                font-size: 40px;
+                padding: 0 20px;
+                margin-bottom: 20px;
+            }
+            
+            @include extraSmall {
+                font-size: 40px;
+                padding: 0;
+                margin-bottom: 30px;
+            }
         }
         
         p {
             font-size: 36px;
             line-height: 40px;
             margin-bottom: 55px;
+        
+            @include small {
+                padding: 0 20px;
+                font-size: 25px;
+                line-height: 30px;
+                margin-bottom: 35px;
+            }
+            
+            @include extraSmall {
+                font-size: 20px;
+                line-height: 26px;
+                margin-bottom: 30px;
+            }
         }
         
         .hero-image {
@@ -62,6 +97,10 @@
             top: -80px;
             right: -120px;
             opacity: 0;
+            
+            @include betweenMedium {
+                display: none;
+            }
         }
         
         .iphone-image {
@@ -97,6 +136,18 @@
             width: 60%;
             padding-right: 100px;
             margin-bottom: 10px;
+            
+            @include betweenMedium {
+                width: 100%;
+                text-align: center;
+                padding-right: 0;
+            }
+            
+            @include small {
+                width: 100%;
+                padding-right: 0;
+            }
+            
         }
         
         .hero-btn {
@@ -107,6 +158,15 @@
             transition: .2s;
             text-transform: uppercase;
             
+            @include extraSmall {
+                display: inline-block;
+                padding: 15px 25px;
+                font-size: 15px;
+                text-align: center;
+                word-wrap: break-word;
+                
+            }
+            
         }
         
         .hero-btn:hover {
@@ -115,6 +175,10 @@
         .btn-phone {
             vertical-align: middle;
             padding-right: 10px;
+            
+            @include extraSmall {
+                display: none;
+            }
         }
     }
     

@@ -11,6 +11,12 @@
         @content;
     }
 }
+
+@mixin betweenMedium {
+    @media only screen and (max-width : 900px) {
+        @content;
+    }
+}
         
 /* Small Devices, Tablets */
 @mixin small {

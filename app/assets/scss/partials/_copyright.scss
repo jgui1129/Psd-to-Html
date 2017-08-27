@@ -1,23 +1,52 @@
 #copyright {
     background: #d7dedc;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 100;
         
     .container {
         text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    
     .inline {
         display: inline-block;
         vertical-align: middle;
         padding-right: 50px;
+        
+        @include medium {
+            padding-right: 20px;
+        }
+        
+        @include small {
+            display: block;
+            margin-bottom: 15px;
+            padding-right: 0;
+        }
+        
+        @include extraSmall {
+            display: block;
+            margin-bottom: 15px;
+            text-align: center;
+            padding-right: 0;
+        }
+        
     }
+    
     .inline:nth-child(1):after,
     .inline:nth-child(2):after {
         content: "|";
         margin-left: 35px;
     }
+    
+        @include small {
+            .inline:nth-child(1):after,
+            .inline:nth-child(2):after {
+                content: "";
+                margin-left: 35px;
+        }
+    }
+
     img {
         vertical-align: top;
         margin-top: 0;

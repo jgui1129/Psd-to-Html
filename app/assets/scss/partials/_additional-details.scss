@@ -7,6 +7,23 @@
         width: 65%;
         padding: 100px 0;
         
+        
+        @include betweenMedium {
+            width: 80%;
+        }
+        
+        @include medium {
+            width: 90%;
+        }
+        
+        @include small {
+            width: 100%;
+            padding: 40px 10px;
+            text-align: center;
+        }
+        
+        
+        
         h2 {
             font-size: 48px;
             font-family: 'Montserrat';
@@ -14,6 +31,17 @@
             line-height: 60px;
             margin-bottom: 50px;
             color: white;
+            
+            @include small {
+                font-size: 40px;
+                line-height: 50px;
+            }
+            
+            @include extraSmall {
+                font-size: 30px;
+                line-height: 40px;
+                margin-bottom: 50px;
+            }
             
             span {
                 color: $btn-color;
@@ -27,6 +55,16 @@
             margin-bottom: 80px;
             padding-right: 150px;
             color: $text-color;
+            
+            @include small {
+                padding-right: 0;
+            }
+            
+            @include extraSmall {
+                padding-right: 0;
+                margin-bottom: 50px;
+            }
+            
         }
         
         .additional-details-btn {
