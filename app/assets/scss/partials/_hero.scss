@@ -10,14 +10,49 @@
 
     .hero-upper {
         
+        
+        @include small {
+        
+            .show-mobile-nav {
+                background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3));
+                float: left;
+                width: 100%;
+                height: 100%;
+                z-index: 998;
+                padding: 50px;
+                text-align: center;
+
+            
+                li {
+                    display: block;
+                    width: 100%;
+                    color: red;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        
+        
+        display: relative;
+        
         ul li {
             display: inline-block;
             margin-right: 40px;
             margin-top: 20px;
             
+            
+            @include medium {
+                font-size: 13px;
+                margin-right: 25px;
+            }
+            
             @include small {
                 display: none;
+
             }
+            
+            
         }
         
         li a {
@@ -35,10 +70,20 @@
         
         .hero-logo {
             float: left;
+            
+        }
+        
+        .hero-logo img {
+            
+            @include small {
+                width: 50%;
+                margin-top: 20px;
+            }
         }
         
         .hero-nav {
             float: right;
+            
         }
         
     }
@@ -49,10 +94,15 @@
         position: relative;
         color:  white;
         margin-top: 150px;
+        margin-bottom: 20px;
         
         @include betweenMedium {
             margin-top: 70px;
             text-align: center;
+        }
+        
+        @include small {
+            margin-top: 40px;
         }
         
         

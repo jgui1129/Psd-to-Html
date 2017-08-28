@@ -1,0 +1,68 @@
+.nav-mobile {
+
+    position: absolute;
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    top: 40px;
+    right: 30px;
+
+    
+    @include small {
+        display: block;
+    }
+            
+    .nav-mobile-middle {
+        position: absolute;
+        background-color: white;
+        width: 30px;
+        height: 3px;
+        top: 0;
+        right: 0;
+        transition: .3s;
+    }
+    
+    .nav-mobile-middle::before {
+        content: "";
+        position: absolute;
+        background-color: white;
+        width: 30px;
+        height: 3px;
+        right: 0;
+        top: -10px;  
+        transform-origin: 0 0;
+        transition: .3s;
+    }
+    
+    .nav-mobile-middle::after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        width: 30px;
+        height: 3px;
+        right: 0;
+        top: 10px;  
+        transform-origin: 0 100%;
+        transition: .3s;
+    }
+    
+}
+
+    .nav-mobile-close {
+   
+         .nav-mobile-middle {
+            height: 0;
+        }
+        
+        .nav-mobile-middle::before {
+            transform: rotate(45deg) scaleX(1.25);
+        }
+        .nav-mobile-middle::after {
+            transform: rotate(-45deg) scaleX(1.25) translateY(3px) translateX(-1px);
+        }
+   
+        
+    }
+    

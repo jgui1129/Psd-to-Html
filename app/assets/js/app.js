@@ -19,6 +19,11 @@ $(document).ready(function(){
         top: '+=-3px',
     },300);
     $('.iphone-on').delay(2000).animate({opacity:1},500);
+    
+    $('.nav-mobile').on('click',function(){
+        $('.nav-mobile').toggleClass('nav-mobile-close');
+        $(".hero-nav ul").toggleClass('show-mobile-nav');
+    });
  
     
 });

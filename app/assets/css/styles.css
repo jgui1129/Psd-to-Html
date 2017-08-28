@@ -1565,10 +1565,40 @@ p {
   position: relative;
 }
 
+#hero .hero-upper {
+  display: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  #hero .hero-upper .show-mobile-nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    float: left;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    padding: 50px;
+    text-align: center;
+  }
+  #hero .hero-upper .show-mobile-nav li {
+    display: block;
+    width: 100%;
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
 #hero .hero-upper ul li {
   display: inline-block;
   margin-right: 40px;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  #hero .hero-upper ul li {
+    font-size: 13px;
+    margin-right: 25px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1593,6 +1623,13 @@ p {
   float: left;
 }
 
+@media only screen and (max-width: 768px) {
+  #hero .hero-upper .hero-logo img {
+    width: 50%;
+    margin-top: 20px;
+  }
+}
+
 #hero .hero-upper .hero-nav {
   float: right;
 }
@@ -1602,12 +1639,19 @@ p {
   position: relative;
   color: white;
   margin-top: 150px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 900px) {
   #hero .hero-lower {
     margin-top: 70px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #hero .hero-lower {
+    margin-top: 40px;
   }
 }
 
@@ -1748,6 +1792,69 @@ p {
   #hero .hero-lower .btn-phone {
     display: none;
   }
+}
+
+.nav-mobile {
+  position: absolute;
+  display: none;
+  z-index: 999;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  top: 40px;
+  right: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-mobile {
+    display: block;
+  }
+}
+
+.nav-mobile .nav-mobile-middle {
+  position: absolute;
+  background-color: white;
+  width: 30px;
+  height: 3px;
+  top: 0;
+  right: 0;
+  transition: .3s;
+}
+
+.nav-mobile .nav-mobile-middle::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 30px;
+  height: 3px;
+  right: 0;
+  top: -10px;
+  transform-origin: 0 0;
+  transition: .3s;
+}
+
+.nav-mobile .nav-mobile-middle::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 30px;
+  height: 3px;
+  right: 0;
+  top: 10px;
+  transform-origin: 0 100%;
+  transition: .3s;
+}
+
+.nav-mobile-close .nav-mobile-middle {
+  height: 0;
+}
+
+.nav-mobile-close .nav-mobile-middle::before {
+  transform: rotate(45deg) scaleX(1.25);
+}
+
+.nav-mobile-close .nav-mobile-middle::after {
+  transform: rotate(-45deg) scaleX(1.25) translateY(3px) translateX(-1px);
 }
 
 #features {
